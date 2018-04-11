@@ -20,3 +20,10 @@ function accum(s) {
 
  return arrayOfMumbles.join('-');
 }
+
+/*
+  there is always a slick one-liner for problems like this..
+  return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+  we have a .repeat() that can be fed our i
+  
+*/
