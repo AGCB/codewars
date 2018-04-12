@@ -14,6 +14,7 @@ let spinWords = (str) => {
       for(let i = elem.length-1; i>=0; i--) {
         // console.log('this',elem, elem[i]);
         reversed.push(elem[i]);
+        //or of course output.push(elem.split('').reverse().join(''));
       }
       output.push(reversed.join(''));
       reversed = [];
