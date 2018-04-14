@@ -10,13 +10,7 @@ let spinWords = (str) => {
 
   str.forEach((elem,i)=>{
     if(elem.length >4) {
-      let reversed = [];
-      for(let i = elem.length-1; i>=0; i--) {
-        // console.log('this',elem, elem[i]);
-        reversed.push(elem[i]);
-      }
-      output.push(reversed.join(''));
-      reversed = [];
+      output.push(elem.split('').reverse().join(''));
     }
     else {
       output.push(elem);
