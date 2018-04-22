@@ -15,11 +15,11 @@ let obj = {
   */
   for(let i = 0; i<=3; i++) {
     if (arr[i] % 2 === 0) {
-      obj.odds++;
+      obj.evens++;
     }
   }
 
-  if (obj.odds >1) {
+  if (obj.evens >1) {
     arr = arr.filter(x => {
       return x % 2 !== 0;
     })
